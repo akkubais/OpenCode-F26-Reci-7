@@ -1,0 +1,6 @@
+services:
+  opencode-akkubais:
+    build: .
+    ports:
+      - "127.0.0.1:${OPENCODE_HOST_PORT:-4096}:4096"
+    restart: unless-stopped
